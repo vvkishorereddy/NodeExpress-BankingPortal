@@ -1,3 +1,4 @@
+  
 <h1><%= account.nickname %></h1>
 
 <table class="data-panel">
@@ -12,7 +13,7 @@
     <th>Current Balance</th>
   </tr>
   <tr>
-    <td><a href="/<%= account.unique_name %>"><%= account.nickname %></a></td>
+    <td><a href="/account/<%= account.unique_name %>"><%= account.nickname %></a></td>
     <td><%= account.account_number %></td>
     <% if (account.unique_name == 'credit') { %>
       <td>$<%= account.available %></td>
